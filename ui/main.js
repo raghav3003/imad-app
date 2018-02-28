@@ -6,7 +6,7 @@ button.onclick = function() {
     
     request.onreadystatechange = function () {
       
-      if (reques.readyState === XMLHttpRequest.DONE) {
+      if (request.readyState === XMLHttpRequest.DONE) {
           
           if (request.status === 200) {
               var counter = request.responseText
@@ -25,11 +25,11 @@ button.onclick = function() {
 var submit = document.getElementById('submit_btn');
 submit.onclick = function () {
     
-     var request = new XMLHttpRequest();
+    var request = new XMLHttpRequest();
     
     request.onreadystatechange = function () {
       
-      if (reques.readyState === XMLHttpRequest.DONE) {
+      if (request.readyState === XMLHttpRequest.DONE) {
           
           if (request.status === 200) {
               var names = request.responseText;
